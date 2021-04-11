@@ -7,7 +7,73 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1{
+  text-align: center;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.todo-container{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.todo-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  margin-bottom: 10px;
+  border-bottom: 2px solid darkgray;
+}
+
+.todo-form input{
+  outline: none;
+  border: none;
+  width: 85%;
+  padding: 5px;
+  margin: 0 10px;
+}
+.todo-form button{
+  background: transparent;
+  width: 15%;
+  border: none;
+  font-size: 30px;
+  outline: none;
+}
+
+.todo-list{
+  margin: 10px 0;
+}
+
+.todo-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 15px;
+  word-break: break-all;
+}
+
+.completed{
+  text-decoration: line-through;
+  background-color: #f7f7f7;
+}
+
+.checked{
+  color: green;
+}
+
+.task{
+  max-width: 85%;
+}
+
+.task-option{
+  margin: 0 7.5px;
 }
