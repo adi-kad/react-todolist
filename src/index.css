@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,6 +11,8 @@ body {
 
 h1{
   text-align: center;
+  font-family: "Poppins";
+  color: rgba(0, 0, 0, 0.7);
 }
 
 code {
@@ -28,7 +32,7 @@ code {
   align-items: center;
   border: none;
   margin-bottom: 10px;
-  border-bottom: 2px solid darkgray;
+  border-bottom: 1px solid lightgray;
 }
 
 .todo-form input{
@@ -54,7 +58,8 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #eee;
+  background-color: #f7f7f7;
+  box-shadow: 1px 1px 1px 1px #ddd;
   margin: 10px 0;
   padding: 10px;
   border-radius: 15px;
@@ -63,11 +68,13 @@ code {
 
 .completed{
   text-decoration: line-through;
-  background-color: #f7f7f7;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .checked{
   color: green;
+
 }
 
 .task{
@@ -77,3 +84,9 @@ code {
 .task-option{
   margin: 0 7.5px;
 }
+
+.task-option-delete{
+  margin: 0 7.5px;
+  color: #000;
+}
+

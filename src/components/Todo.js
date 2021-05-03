@@ -7,7 +7,7 @@ const Todo = ({todo, handleDeleteTodo, handleCompleteTodo}) => {
             <div className="task">{todo.task}</div>
             <div className="task-options">
             <HiCheck className={`task-option ${todo.completed ? "checked" : ""}`}  onClick={() => {handleCompleteTodo(todo)}}/>
-            <HiX className="task-option" onClick={() => {handleDeleteTodo(todo)}}/> 
+            <HiX className="task-option-delete" onClick={() => {handleDeleteTodo(todo)}}/> 
             </div>                       
         </div>
       );
