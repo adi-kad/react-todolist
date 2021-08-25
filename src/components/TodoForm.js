@@ -8,9 +8,9 @@ const TodoForm = ({addTodo}) => {
 
     function handleSubmit(e){
         e.preventDefault();         
-        if(!taskInput.current.value.trim()){
+        if (!taskInput.current.value.trim()){
            return;
-        }else{
+        } else {
             addTodo({
                 id: uuidv4(),
                 task: taskInput.current.value,
